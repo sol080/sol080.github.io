@@ -61,11 +61,11 @@ One examplary pipeline can be
 ```
 cat life_of_bee.sent | sed -E 's/.* //' | tr -cd "A-Za-z0-9\n'" | sort | uniq -c | sort -nr > life_of_bee.sentend
 ```
-Where a list of sentences in Life of Bee is converted into list of sentence-ending words. **sed** with extended regular expressions (flagged by **-E**) removes every word with a space after in a line, hence, leaves sentence-ending words with punctuations. **tr -d** means to delete and **-c "A-Za-z0-9\n'"**  means anything except the characters in "", which also points to deleting punctuations. **uniq -c** is used to count occurences of unique entries and returns lines in format <number-of-occurences> <word>, while **"sort -nr"** sort lines into decending order. The result is sent to a target file called life_of_bee.sentend with ** > **.
+Where a list of sentences in Life of Bee is converted into list of sentence-ending words. **sed** with extended regular expressions (flagged by **-E**) removes every word with a space after in a line, hence, leaves sentence-ending words with punctuations. **tr -d** means to delete and **-c "A-Za-z0-9\n'"**  means anything except the characters in "", which also points to deleting punctuations. **uniq -c** is used to count occurences of unique entries and returns lines in format \<number-of-occurences> \<word>, while **"sort -nr"** sort lines into decending order. The result is sent to a target file called life_of_bee.sentend with **\>**.
 
 ## Week 5: Scripting and Configuration Files
 
-We might want to, manipulate several text files simutanously in the same manner we did in week 3 and week 4. Here is where scripts (.sh files) coming in, with concepts such as parameters(i.e input and output files) and variables (marked by **$<number>** in scripts). Other important syntaxes are **if** and **exit**. Script files can be moderated by **chmod** and run with **bash** or **./**.
+We might want to, manipulate several text files simutanously in the same manner we did in week 3 and week 4. Here is where scripts (.sh files) coming in, with concepts such as parameters(i.e input and output files) and variables (marked by **$\<number>** in scripts). Other important syntaxes are **if** and **exit**. Script files can be moderated by **chmod** and run with **bash** or **./**.
 
 Example: A script to turn adjectives into their comparative forms
 
@@ -132,21 +132,21 @@ Version control is a common practice in workflows of development projects, to mo
 Some useful git commands are:
 | Command              	   | Purpose				           |
 | ------------------------ |:---------------------------------------------:|
-| git init		   | initialise a repository from existing code    |
-| git status    	   | see staging area and untracked files	   |
-| git add -A    	   | add all files in staging area	 	   |
-| git reset		   | remove all files from staging area		   |
-| git commit -m"<message>" | commit the files in staging area with message |
-| git log    		   | see the last commit			   |
-| git clone		   | clone a remote repository			   |
-| git remote -v		   | view information of a remote repository	   |
-| git branch -a 	   | view all remote and local branches of a repo  |
-| git diff   		   | view changes in the code  		     	   |
-| git push <remote> <local>| push commit(s) from local to a remote repo	   |
-| git pull <remote> <local>| pull changes of remote repo to local repo 	   |
-| git branch <branch-name> | create a branch				   |
-| git checkout <branch>	   | start working on a branch			   |
-| git merge <branch>	   | merging branch to the main/master branch	   |
-| git branch --merged	   | view merged branch	   	       		   |
-| git branch -d <branch>   | delete a local branch			   |
+| `git init`		   | initialise a repository from existing code    |
+| `git status`    	   | see staging area and untracked files	   |
+| `git add -A`    	   | add all files in staging area	 	   |
+| `git reset`		   | remove all files from staging area		   |
+| `git commit -m"<message>"` | commit the files in staging area with message |
+| `git log`    		   | see the last commit			   |
+| `git clone`		   | clone a remote repository			   |
+| `git remote -v`	   | view information of a remote repository	   |
+| `git branch -a` 	   | view all remote and local branches of a repo  |
+| `git diff`   		   | view changes in the code  		     	   |
+| `git push <remote> <local>`| push commit(s) from local to a remote repo  |
+| `git pull <remote> <local>`| pull changes of remote repo to local repo   |
+| `git branch <branch-name>` | create a branch				   |
+| `git checkout <branch>`    | start working on a branch		   |
+| `git merge <branch>`	   | merging branch to the main/master branch	   |
+| `git branch --merged`	   | view merged branch	   	       		   |
+| `git branch -d <branch>`   | delete a local branch			   |
 
