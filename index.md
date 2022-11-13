@@ -4,24 +4,24 @@ layout: default
 
 ## Introduction
 
-Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Agile and self-motivated first-year Master's student at the University of Helsinki with a passion for digital well-being. Experienced with coordinating fast-paced IT projects and resolving conflicts among stakeholders. Demonstrated ability to conduct surveys and quantitative analysis for meaningful insights.
 
 ## Find me on
 
-[LinkedIn](https://fi.linkedin.com/mouse-mousekewitz), [GitHub](https://github.com/mokewitz)
+[LinkedIn](https://www.linkedin.com/in/duong-nguyen-6ba582129/), [GitHub](https://github.com/sol080)
 
 ## Contact
 
-My email address is of the form first_name.last_name@helsinki.fi. 
+My email address is anh.d.nguyen@helsinki.fi.
 
 ## Courses I've Taken
 
-[Enjoying Cheese I](https://courses.helsinki.fi/enjoying-cheese-I), fall 2018
-
-[Feline Avoidance](https://courses.helsinki.fi/feline-avoidance), fall 2018
+[Command-Line Tools for Linguists](https://studies.helsinki.fi/courses/cur/hy-opt-cur-2223-261401a1-c550-4436-91b9-7edf4a1a3b57/KIK-LG221/Command_Line_Tools_for_Linguists_exercise_session_Lectures), fall 2022
 
 ## Projects
 
 ## Misc. 
 
-[Gotta Love Cheese](https://en.wikipedia.org/wiki/Cheese) 
+[Gotta Love Cheese](https://en.wikipedia.org/wiki/Cheese)
+
+## My CV
