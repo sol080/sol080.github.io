@@ -24,7 +24,7 @@ These commands will open an application view, which can be quit using **q**, **E
 
 ## Week 2: Navigating a UNIX System
 
-In this week, we learnt about root directory and directory hierarchy in UNIX computers. One important directory is _bin_**, which containing commands in binary files. bin can be located under root (for OS-required programs) or usr (for programs installed to help users). One can also check where the command they run is located using which command.
+In this week, we learnt about root directory and directory hierarchy in UNIX computers. One important directory is **_bin_**, which containing commands in binary files. bin can be located under root (for OS-required programs) or usr (for programs installed to help users). One can also check where the command they run is located using which command.
 
 Another important topic is how to monitor, initial, move from foreground to background and vice-versa, and kill processes.
 - List processes using **top**
@@ -45,11 +45,11 @@ iconv -f <original-encoding> -t <target-encoding> <file-name> > <target-file-nam
 ```
 - Windows and Unix system also differ to each other in usage of carriage returns, which can be shown with **less -U** and converted by **dos2unix**
 - List of words in a corpus can be built by using **tr** for tokenisation, **sort** for alphabetical ordering, and **uniq** for removing duplicates
-- **grep** or **egrep** are often used to find linguistically relevant information from a text file, which requires usage of _regular expressions_**  
+- **grep** or **egrep** are often used to find linguistically relevant information from a text file, which requires usage of **_regular expressions_**  
 
 ## Week 4: Advanced Corpus Processing
 
-To manipulate a corpus, **sed** can be used a long with **egrep** and **tr** to form a _pipeline_** (with **|** and **>**).
+To manipulate a corpus, **sed** can be used a long with **egrep** and **tr** to form a **_pipeline_** (with **|** and **>**).
 One examplary pipeline can be
 ```
 cat life_of_bee.sent | sed -E 's/.* //' | tr -cd "A-Za-z0-9\n'" | sort | uniq -c | sort -nr > life_of_bee.sentend
@@ -58,22 +58,22 @@ Where a list of sentences in Life of Bee is converted into list of sentence-endi
 
 ## Week 5: Scripting and Configuration Files
 
-We might want to, manipulate several text files simutanously in the same manner we did in week 3 and week 4. Here is where scripts (.sh files) coming in, with concepts such as parameters(i.e input and output files) and variables (marked by **$<number>** in scripts). Other important syntaxes are _if_** and _exit_**. Script files can be moderated by **chmod** and run with **bash** or **./**.
+We might want to, manipulate several text files simutanously in the same manner we did in week 3 and week 4. Here is where scripts (.sh files) coming in, with concepts such as parameters(i.e input and output files) and variables (marked by **$<number>** in scripts). Other important syntaxes are **if** and **exit**. Script files can be moderated by **chmod** and run with **bash** or **./**.
 
 The PC local system also contains several environment variables, which are used in shell/bash configuration files for specific settings.
 
 ## Week 6: Installing and Running Programs
 
-Multiple scripts can be turned into a program for specific purposes. One can either install existing programs or softwares or write their own program. For linguists, _Python_** with its _nltk_** library (and many others!) are powerful toolsfor handling corpus, which can be installed using **homebrew** in Mac OS. It is recommended to create and maintain a database of installed softwares, and use **locate** to monitor which files are added and where in our system. For Python, it is recommended to have one _virtual environment_** per project, where libraries and programs settings can be customised according to user's needs. Finally, one can handily write a _Makefile_** compiling multiple scripts and implement it as a program. 
+Multiple scripts can be turned into a program for specific purposes. One can either install existing programs or softwares or write their own program. For linguists, **_Python_** with its **_nltk_** library (and many others!) are powerful toolsfor handling corpus, which can be installed using **homebrew** in Mac OS. It is recommended to create and maintain a database of installed softwares, and use **locate** to monitor which files are added and where in our system. For Python, it is recommended to have one **_virtual environment_** per project, where libraries and programs settings can be customised according to user's needs. Finally, one can handily write a **_Makefile_** compiling multiple scripts and implement it as a program. 
 
 ## Week 7: Version Control
 
-Version control is a common practice in workflows of development projects, to monitor changes in a file (i.e. a program file), to let we undo modifications where needed. It includes having branches (as drafts) to work on until it can be merged into the original file, which can also be tracked and reversed. _git_** is a technology for version control and _Github_** is popular with teams of many members developing programs.
+Version control is a common practice in workflows of development projects, to monitor changes in a file (i.e. a program file), to let we undo modifications where needed. It includes having branches (as drafts) to work on until it can be merged into the original file, which can also be tracked and reversed. **_git_** is a technology for version control and **_Github_** is popular with teams of many members developing programs.
 
 Some useful git commands are:
-| Command              	   | Purpose				           | 
-| ------------------------ |:---------------------------------------------:| 
-| git init		   | initialise a repository from existing code    | 
+| Command              	   | Purpose				           |
+| ------------------------ |:---------------------------------------------:|
+| git init		   | initialise a repository from existing code    |
 | git status    	   | see staging area and untracked files	   |
 | git add -A    	   | add all files in staging area	 	   |
 | git reset		   | remove all files from staging area		   |
@@ -90,5 +90,4 @@ Some useful git commands are:
 | git merge <branch>	   | merging branch to the main/master branch	   |
 | git branch --merged	   | view merged branch	   	       		   |
 | git branch -d <branch>   | delete a local branch			   |
-| git push <remote> -delete <branch> | delete a remote branch		   |
 
