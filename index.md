@@ -24,4 +24,4 @@ My email address is anh.d.nguyen@helsinki.fi.
 
 [Gotta Love Cheese](https://en.wikipedia.org/wiki/Cheese)
 
-## My CV
+## My CV [here]({{https://github.com/sol080/sol080.github.io/blob/master}}/assets/documents/Duong_Nguyen_CV.pdf)
