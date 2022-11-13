@@ -1,0 +1,58 @@
+---
+layout: default
+---
+
+## Introduction
+
+Command Line Tools for Linguists is a course offered at the University of Helsinki for linguistic students to take during their undergraduate, graduate or post-graduate study. The course covers basic commands for Windows or Linux/MacOS system essential for research project in linguistics. During seven weeks, student learns to use terminal to deal with files and directories in general, to search/manipulate corpus (text files), to build automation programs, and finally to use Version Control for their projects. The learning process is solidly organised into  weekly online materials, quizzes, and in-person tutorials.
+
+Here are some of my personal notes for each week of the course on things to remember and reflections on the quizzes (Week titles are taken from the course material)
+ 
+## Week 1: Introduction to Command Line Environments
+
+There are many ways to work with directories, with some important commands are:
+- Print  the current directory with **pwd** and set it to another with **cd**
+- Make a directory with **mkdir** and list its contents (including hidden files) with **ls -a**
+
+
+Command line tools offer basic commands to deal with files in general, which can be complimented with an editor in the case of text files.
+- Copy file(s) with **cp** (beware of overwriting when the new file name exists!), remove file(s) with **rm**, move or rename a file with **mv**
+These commands can be used for directories by adding option **-r** to the command.
+- Display a text file with **cat**, or **less**
+These commands will open an application view, which can be quit using **q**, **ESC**, **Ctrl-c** or **Ctrl-d**)
+- Usage of emacs for text files (Control key and Meta key are heavily used for shortcut operations)
+
+## Week 2: Navigating a UNIX System
+
+In this week, we learnt about root directory and directory hierarchy in UNIX computers. One important directory is _bin_**, which containing commands in binary files. bin can be located under root (for OS-required programs) or usr (for programs installed to help users). One can also check where the command they run is located using which command.
+
+Another important topic is how to monitor, initial, move from foreground to background and vice-versa, and kill processes.
+- List processes using **top**
+- Move a process to background by adding **&** at the end of the command, or using **Ctrl+z**
+- Move a process to forground again using **fg**
+- Get pid of all running processes using **ps aux**, or search for specific ones using **grep** next to ps aux in a pipe line
+- Kill a process using **kill -9 <PID>**
+
+All basic commands in Week 1 and Week 2 can also be used in remote servers using ssh (secure shell) and file transfer between remote and local server can be done with scp. 
+
+## Week 3: Basic Corpus Processing
+
+Getting into corpus processing, one needs to be aware of, and extract the corpus' metadata including  different encoding systems and number of lines, words, characters.
+- The former can be tracked with  **file**, and converted with **iconv**
+One example for iconv syntax
+```
+iconv -f <original-encoding> -t <target-encoding> <file-name> > <target-file-name>
+```
+- Windows and Unix system also differ to each other in usage of carriage returns, which can be shown with **less -U** and converted by **dos2unix**
+- List of words in a corpus can be built by using **tr** for tokenisation, **sort** for alphabetical ordering, and **uniq** for removing duplicates
+- **grep** or **egrep** are often used to find linguistically relevant information from a text file, which requires usage of _regular expressions_**  
+
+## Week 4: Advanced Corpus Processing
+
+## Week 5: Scripting and Configuration Files
+
+## Week 6: Installing and Running Programs
+
+## Week 7: Version Control
+
+
